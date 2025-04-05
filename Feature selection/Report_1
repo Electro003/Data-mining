@@ -1,0 +1,66 @@
+
+=== Comparing Feature Selection Methods ===
+
+--- Testing tree selection method ---
+
+=== Using Tree-based Feature Selection ===
+Selected 6 features out of 613
+Selected features:
+- Time
+- Length
+- Airline_WN
+- DayOfWeek_2
+- DayOfWeek_4
+- DayOfWeek_7
+Average F1 score: 0.6236 (±0.0011)
+
+--- Testing f_test selection method ---
+
+=== Using ANOVA F-test Feature Selection ===
+Selected 6 features out of 613
+Selected features:
+- Time
+- Airline_FL
+- Airline_US
+- Airline_WN
+- Airline_YV
+- AirportFrom_MDW
+Average F1 score: 0.6019 (±0.0011)
+
+--- Testing mutual_info selection method ---
+
+=== Using Mutual Information Feature Selection ===
+Selected 6 features out of 613
+Selected features:
+- Time
+- Length
+- Airline_WN
+- DayOfWeek_3
+- DayOfWeek_4
+- DayOfWeek_5
+Average F1 score: 0.6206 (±0.0008)
+
+--- Testing rfe selection method ---
+
+=== Using Recursive Feature Elimination ===
+Selected 6 features out of 613
+Selected features:
+- Time
+- Airline_WN
+- DayOfWeek_2
+- DayOfWeek_4
+- DayOfWeek_5
+- DayOfWeek_6
+Average F1 score: 0.5990 (±0.0005)
+
+Best selection method: Tree-based (F1 = 0.6236)
+
+Feature overlap between different methods:
+ANOVA F-test and Tree-based: 2/6 features in common
+ANOVA F-test and Mutual Information: 2/6 features in common
+ANOVA F-test and RFE: 2/6 features in common
+Mutual Information and Tree-based: 4/6 features in common
+Mutual Information and RFE: 4/6 features in common
+RFE and Tree-based: 4/6 features in common
+
+Recommended approach: Use 'tree' feature selection with features: ['Time' 'Length' 'Airline_WN' 'DayOfWeek_2' 'DayOfWeek_4' 'DayOfWeek_7']
