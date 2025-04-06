@@ -1,0 +1,77 @@
+D:\Repos\DataMining\.venv\Scripts\python.exe D:\Repos\DataMining\tema3-knn.py
+Dataset shape: (539382, 8)
+
+Sample data:
+   Flight    Time  Length Airline AirportFrom AirportTo  DayOfWeek  Class
+0  2313.0  1296.0   141.0      DL         ATL       HOU          1      0
+1  6948.0   360.0   146.0      OO         COS       ORD          4      0
+2  1247.0  1170.0   143.0      B6         BOS       CLT          3      0
+3    31.0  1410.0   344.0      US         OGG       PHX          6      0
+4   563.0   692.0    98.0      FL         BMI       ATL          4      0
+
+Data types:
+Flight         float64
+Time           float64
+Length         float64
+Airline         object
+AirportFrom     object
+AirportTo       object
+DayOfWeek        int64
+Class            int64
+dtype: object
+
+Missing values:
+Flight         0
+Time           0
+Length         0
+Airline        0
+AirportFrom    0
+AirportTo      0
+DayOfWeek      0
+Class          0
+dtype: int64
+
+Class distribution:
+Class
+0    299118
+1    240264
+Name: count, dtype: int64
+Global delay rate: 0.4454
+
+=== Implementing Route-Based Grouping ===
+Identified 1052 common routes out of 4190 total routes
+
+=== Adding Time-Based Features ===
+
+=== Adding Interaction Features ===
+
+=== Using Tree-based Feature Selection ===
+Selected 8 features out of 29
+Selected features:
+- Time
+- Length
+- Flight_smooth
+- Route_smooth
+- TimeDecimal
+- Airline_Route
+- Flight_Length
+- Time_Length
+
+Selected 8 features for model training
+
+=== KNN Optimization ===
+Best parameters: {'metric': 'manhattan', 'n_neighbors': 15, 'p': 1, 'weights': 'uniform'}
+Best cross-validation score: 0.6564
+
+=== K-Nearest Neighbors Results ===
+Confusion Matrix:
+[[225928  73190]
+ [109505 130759]]
+Accuracy: 0.6613
+Precision - Class 0: 0.6735, Class 1: 0.6411
+Recall - Class 0: 0.7553, Class 1: 0.5442
+F1 Score - Class 0: 0.7121, Class 1: 0.5887
+Global F1 Score: 0.6571
+AUC: 0.7089
+
+Process finished with exit code 0

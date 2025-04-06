@@ -1,0 +1,64 @@
+D:\Repos\DataMining\.venv\Scripts\python.exe D:\Repos\DataMining\tema3-tree.py
+Dataset shape: (539382, 8)
+
+Sample data:
+   Flight    Time  Length Airline AirportFrom AirportTo  DayOfWeek  Class
+0  2313.0  1296.0   141.0      DL         ATL       HOU          1      0
+1  6948.0   360.0   146.0      OO         COS       ORD          4      0
+2  1247.0  1170.0   143.0      B6         BOS       CLT          3      0
+3    31.0  1410.0   344.0      US         OGG       PHX          6      0
+4   563.0   692.0    98.0      FL         BMI       ATL          4      0
+
+Data types:
+Flight         float64
+Time           float64
+Length         float64
+Airline         object
+AirportFrom     object
+AirportTo       object
+DayOfWeek        int64
+Class            int64
+dtype: object
+
+Missing values:
+Flight         0
+Time           0
+Length         0
+Airline        0
+AirportFrom    0
+AirportTo      0
+DayOfWeek      0
+Class          0
+dtype: int64
+
+Class distribution:
+Class
+0    299118
+1    240264
+Name: count, dtype: int64
+
+=== Using Tree-based Feature Selection ===
+Selected 3 features out of 613
+Selected features:
+- Time
+- Length
+- Airline_WN
+
+Selected 3 features for model training
+
+=== Decision Tree Optimization ===
+Best parameters: {'criterion': 'entropy', 'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2}
+Best cross-validation score: 0.6490
+
+=== Decision Tree Results ===
+Confusion Matrix:
+[[230237  68881]
+ [117067 123197]]
+Accuracy: 0.6553
+Precision - Class 0: 0.6629, Class 1: 0.6414
+Recall - Class 0: 0.7697, Class 1: 0.5128
+F1 Score - Class 0: 0.7123, Class 1: 0.5699
+Global F1 Score: 0.6489
+AUC: 0.6951
+
+Process finished with exit code 0
