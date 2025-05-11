@@ -1,0 +1,11 @@
+Method,Optimal_K,ARI
+Hierarchical_ward_Silhouette,2,0.047570721653816816
+Hierarchical_complete_Silhouette,2,0.047570721653816816
+Hierarchical_average_Silhouette,2,0.047570721653816816
+Hierarchical_single_Silhouette,2,0.047570721653816816
+KMeans_Silhouette,2,0.046699353065636114
+KMeans_Elbow,4,0.03993624298541178
+Hierarchical_ward_Elbow,4,0.038683578425646445
+Hierarchical_complete_Elbow,4,0.038683578425646445
+Hierarchical_average_Elbow,4,0.038683578425646445
+Hierarchical_single_Elbow,4,0.038683578425646445

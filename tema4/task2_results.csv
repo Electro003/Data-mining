@@ -1,3 +1,3 @@
-Dataset,True_Clusters,KMeans_Elbow_Optimal_K,Hierarchical_Elbow_Optimal_K,KMeans_Silhouette_Optimal_K,Hierarchical_Silhouette_Optimal_K
-2d-10c.dat,11,3,6,2,2
-iris.csv,3,5,4,2,2
+Dataset,True_Clusters,KMeans_Elbow_Optimal_K,KMeans_Silhouette_Optimal_K,Hierarchical_ward_Elbow_Optimal_K,Hierarchical_ward_Silhouette_Optimal_K,Hierarchical_complete_Elbow_Optimal_K,Hierarchical_complete_Silhouette_Optimal_K,Hierarchical_average_Elbow_Optimal_K,Hierarchical_average_Silhouette_Optimal_K,Hierarchical_single_Elbow_Optimal_K,Hierarchical_single_Silhouette_Optimal_K
+2d-10c.dat,11,4,2,6,2,3,2,3,2,3,2
+iris.csv,3,5,2,4,2,6,3,7,2,6,2

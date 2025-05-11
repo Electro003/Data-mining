@@ -1,0 +1,3 @@
+Dataset,True_Clusters,KMeans_Elbow_Error,KMeans_Silhouette_Error,Hierarchical_ward_Elbow_Error,Hierarchical_ward_Silhouette_Error,Hierarchical_complete_Elbow_Error,Hierarchical_complete_Silhouette_Error,Hierarchical_average_Elbow_Error,Hierarchical_average_Silhouette_Error,Hierarchical_single_Elbow_Error,Hierarchical_single_Silhouette_Error
+2d-10c.dat,11,7,9,5,9,8,9,8,9,8,9
+iris.csv,3,2,1,1,1,3,0,4,1,3,1
