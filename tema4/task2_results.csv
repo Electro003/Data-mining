@@ -1,0 +1,3 @@
+Dataset,True_Clusters,KMeans_Elbow_Optimal_K,Hierarchical_Elbow_Optimal_K,KMeans_Silhouette_Optimal_K,Hierarchical_Silhouette_Optimal_K
+2d-10c.dat,11,3,6,2,2
+iris.csv,3,5,4,2,2
